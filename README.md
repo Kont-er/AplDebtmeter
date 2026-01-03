@@ -1,22 +1,45 @@
 # AplDebtmeter
-project for Apl
+Project for Apl
 
-#Version 0.1 instructions:
-1 Solution 2 projects, make sure to build DebtMeter.Native first and DebtMeter.Gui second
+---
 
-Contents:
-*Dir: DebtMeter.Gui\ > Front end winForm app that loads the csv passes it into the asm backend, recieves data and draws a graph*
-  Important files:
-  -DebtMeter.Gui.sln > the main visual studio 2022 solution for this project
-  -Program.cs > main() file, function for importing the backend .dll     
-  -Form1.Designer.cs > winform frontend design
-  -Form1.cs > logic for importing csv and calling the backend .dll
-  
-*Dir:...\DebtMeter.Gui\bin\Debug\ > working directory for the project (this is where the .csv and the .dll files should be)*
+## Version 0.1 Instructions
 
-*Dir: DebtMeter.Native\ > Back end directory with the assembler file and C files required for calling it*
-  Important files: 
-  -Backend.h > header declaring the asm function
-  -Backend.c > C file exporting the .dll and calling the .asm function
-  -compute.asm > the backend logic
+- The solution contains **2 projects**
+- Make sure to build **DebtMeter.Native first**, and **DebtMeter.Gui second**
 
+---
+
+## Contents
+
+### `Dir: DebtMeter.Gui\`
+Front-end WinForms application that loads the CSV, passes it into the ASM backend, receives data, and draws a graph.
+
+**Important files:**
+- `DebtMeter.Gui.sln`  
+  The main Visual Studio 2022 solution for this project
+- `Program.cs`  
+  `main()` file, function for importing the backend `.dll`
+- `Form1.Designer.cs`  
+  WinForms frontend design
+- `Form1.cs`  
+  Logic for importing CSV and calling the backend `.dll`
+
+---
+
+### `Dir: DebtMeter.Gui\bin\Debug\`
+Working directory for the project  
+(this is where the `.csv` and the `.dll` files should be)
+
+---
+
+### `Dir: DebtMeter.Native\`
+Back-end directory with the assembler file and C files required for calling it.
+
+**Important files:**
+- `Backend.h`  
+  Header declaring the ASM function
+- `Backend.c`  
+  C file exporting the `.dll` and calling the `.asm` function
+- `compute.asm`  
+  The backend logic
